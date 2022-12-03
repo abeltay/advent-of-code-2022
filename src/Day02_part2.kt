@@ -1,11 +1,11 @@
 fun main() {
-    val rock = 1
-    val paper = 2
-    val scissors = 3
-    val lose = 0
-    val draw = 3
-    val win = 6
     fun part2(input: List<String>): Int {
+        val rock = 1
+        val paper = 2
+        val scissors = 3
+        val lose = 0
+        val draw = 3
+        val win = 6
         fun convertLeft(input: Char): Int {
             return when (input) {
                 'A' -> rock
@@ -23,18 +23,17 @@ fun main() {
         }
 
         fun normalise(result: Int): Int {
-            var out = result
             if (result < 1) {
-                out = result + 3
+                return result + 3
             }
             if (result > 3) {
-                out = result - 3
+                return result - 3
             }
-            return out
+            return result
         }
 
         var total = 0
-        input.forEach {
+        for (it in input) {
             val left = convertLeft(it[0])
             val right = convertRight(it[2])
             total += when (right) {
