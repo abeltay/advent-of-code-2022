@@ -1,8 +1,6 @@
 # advent-of-code-2022
 
-Welcome to the Advent of Code[^aoc] Kotlin project created by [abeltay][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
-
-In this repository, abeltay is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
+Welcome to the Advent of Code[^aoc] Kotlin project using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
 
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
@@ -10,6 +8,9 @@ If you're stuck with Kotlin-specific questions or anything related to this templ
 - [Kotlin Slack][slack]
 - Template [issue tracker][issues]
 
+# To set up the scripts
+1. Create a file called `day.txt` and put in the day. E.g. `01`
+2. Run `./move-input.sh` to copy the input file from Downloads folder
 
 [^aoc]:
     [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
