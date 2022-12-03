@@ -2,29 +2,17 @@ import java.util.*
 
 fun main() {
     fun part2(input: List<String>): Int {
+        val split = splitListByEmptyLine(input)
         val heap = PriorityQueue(listOf(0, 0, 0))
-        var count = 0
-        input.forEach {
-            if (it.isNotBlank()) {
-                count += it.toInt()
-            } else {
-                val element = heap.peek()
-                if (count > element) {
-                    heap.remove(element)
-                    heap.add(count)
-                }
-                count = 0
+        for (s in split) {
+            val count = s.sumOf { it.toInt() }
+            val element = heap.peek()
+            if (count > element) {
+                heap.remove(element)
+                heap.add(count)
             }
         }
-        if (count > heap.peek()) {
-            heap.remove(heap.peek())
-            heap.add(count)
-        }
-        var total = 0
-        heap.forEach {
-            total += it
-        }
-        return total
+        return heap.sum()
     }
 
     // test if implementation meets criteria from the description, like:
