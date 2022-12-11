@@ -14,7 +14,7 @@ If you're stuck with Kotlin-specific questions or anything related to this templ
 1. Run `./prep.sh 01` with the day number appended. The example here is for Day 01
 2. Run `./input.sh` to copy the input file from Downloads folder
 
-To test the template, uncomment the command to run part2 and replace `{replace}` with `04`
+To test the template, uncomment the command to run part2 and run
 
 [^aoc]:
     [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
