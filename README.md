@@ -10,6 +10,8 @@ If you're stuck with Kotlin-specific questions or anything related to this templ
 - [Kotlin Slack][slack]
 - Template [issue tracker][issues]
 
+> Note: All task input files are excluded from the repository with `.gitignore` – we should not post them publicly, as Eric Wastl asks for: [Tweet](https://twitter.com/ericwastl/status/1465805354214830081).
+
 # To run the scripts
 1. Run `./prep.sh 01` with the day number appended. The example here is for Day 01
 2. Run `./input.sh` to copy the input file from Downloads folder
