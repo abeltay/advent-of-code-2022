@@ -1,5 +1,5 @@
 fun main() {
-    fun part1(input: List<String>): Int {
+    fun parseInput(input: List<String>): List<String> {
         val inputLineRegex = """(\d+)-(\d+),(\d+)-(\d+)""".toRegex()
 
         for (it in input) {
@@ -8,7 +8,13 @@ fun main() {
                 ?.destructured
                 ?: throw IllegalArgumentException("Incorrect input line $it")
         }
+
+        return input
+    }
+    fun part1(input: List<String>): Int {
+        val nextInput = parseInput(input)
         var answer = 0
+        println(answer)
         return answer
     }
 
